@@ -1,0 +1,19 @@
+#
+# fips-glslang
+#
+---
+run:
+    spirv-remap:
+        cwd: .
+    glslangValidator:
+        cwd: .
+
+exports:
+    header-dirs:
+        - glslang/glslang/Public
+    modules:
+        OGLCompiler: .
+        OSDependent: .
+        SPIRV: .
+        hlsl: .
+        glslang: .
