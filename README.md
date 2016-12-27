@@ -7,7 +7,7 @@ fipsified glslang (https://github.com/KhronosGroup/fips-glslang)
 
 fips build system: https://github.com/floooh/fips
 
-To use assimp you need just to add it to your `fips.yml`:
+To use glslang you need just to add it to your `fips.yml`:
 
 ```cmake
 imports:
@@ -15,4 +15,4 @@ imports:
          git: https://github.com/fungos/fips-glslang.git
 ```
 
-And them add a dependency to your project using `fips_deps(glslang)`.
+And them add a dependency to your project using `fips_deps(OGLCompiler SPIRV hlsl glslang OSDependent)`.
